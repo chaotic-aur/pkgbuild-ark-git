@@ -12,6 +12,8 @@ url='https://apps.kde.org/ark/'
 license=(GPL)
 depends=(kparts-git kpty-git libarchive libzip kitemmodels-git hicolor-icon-theme)
 makedepends=(extra-cmake-modules-git kdoctools-git)
+conflicts=(${pkgname%-git})
+provides=(${pkgname%-git})
 optdepends=('p7zip: 7Z format support' 'unrar: RAR decompression support' 'unarchiver: RAR format support'
             'lzop: LZO format support' 'lrzip: LRZ format support')
 groups=(kde-applications-git kde-utilities-git)
