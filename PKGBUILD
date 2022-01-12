@@ -17,7 +17,7 @@ provides=(${pkgname%-git})
 optdepends=('p7zip: 7Z format support' 'unrar: RAR decompression support' 'unarchiver: RAR format support'
             'lzop: LZO format support' 'lrzip: LRZ format support')
 groups=(kde-applications-git kde-utilities-git)
-source=("git+https://invent.kde.org/utilities/${pkgname%-git}")
+source=("git+https://github.com/KDE/${pkgname%-git}.git")
 sha256sums=('SKIP')
 
 
